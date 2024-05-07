@@ -1,0 +1,146 @@
+:root {
+    --accent-color: #46A358;
+    --accent-color-secondary: rgba(70, 163, 88, 8.84);
+    --secondary-color: #3D3D3D;
+    --main-color:  #FFFFFF;
+    --bg-secondary-color:  #FBFBFB;
+
+
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-xl: 18px;
+
+    --content-width: 1200px;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--font-md);
+}
+
+.container {
+    max-width: var(--content-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 10px;
+    margin: 0 auto;
+
+    border-bottom: 1px solid var(--accent-color-secondary);
+}
+
+.btn {
+    padding: 8px 17px;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 3px solid transparent;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--bg-secondary-color);
+    color: var(--bg-secondary-color);
+}
+
+.btn.btn-success {
+    background: var(--accent-color-secondary);
+    color: var(--bg-secondary-color);
+}
+
+.btn.btn-success:hover {
+    background: var(--secondary-color);
+    border: 3px solid var(--accent-color-secondary);
+}
+
+header {
+    margin-top: 30px;
+}
+
+
+
+.logo {
+    width: 150px;
+}
+
+.header--logo, .header-controls {
+    max-width: 150px;
+    min-width: 150px;
+}
+
+.header--logo:hover {
+    transition: 1s;
+    transform: rotateX(360deg);
+}
+
+.header-controls {
+    text-align: end;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+nav li {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+    min-width: 80px;
+    text-align: center;
+}
+
+nav .active, nav li:hover {
+    font-weight: bold;
+    border-color: var(--accent-color);
+
+
+}
+
+
+
+
+.info {
+    display: flex;
+    margin: 15px 0;
+    background-color: var(--bg-secondary-color);
+}
+
+.plant {
+    width: 507px;
+}
+
+.tittle {
+    letter-spacing: 2px;
+}
+
+span {
+    color: var(--accent-color);
+}
+.slogan {
+
+}
+
+.intro {
+    color: grey;
+    font-weight: lighter;
+    width: 557px;
+}
+
+.text-container {
+    margin: 68px 95px 0 43px;
+}
+
+.shop {
+    margin-top: 45px;
+}
